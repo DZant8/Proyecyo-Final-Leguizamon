@@ -28,6 +28,8 @@ $celeste: lightblue;
 	color:$violeta;
 	text-align: center;
 	letter-spacing: 20px;
+	display: flex;
+	justify-content: center;
 }
 
 a {
@@ -355,9 +357,11 @@ img {
 
 .header__titulo {
 	font-family: 'Titillium Web';
-	font-size: 55px;
+	font-size: 45px;
 	color:$violeta;
 	text-align: center;
 	letter-spacing: 20px;
+	display: flex;
+	justify-content: center;
 }
 }

@@ -15,7 +15,9 @@
   font-size: 80px;
   color: violet;
   text-align: center;
-  letter-spacing: 20px; }
+  letter-spacing: 20px;
+  display: flex;
+  justify-content: center; }
 
 a {
   text-decoration: none; }
@@ -310,7 +312,9 @@ img {
     animation-duration: 3s; }
   .header__titulo {
     font-family: 'Titillium Web';
-    font-size: 55px;
+    font-size: 45px;
     color: violet;
     text-align: center;
-    letter-spacing: 20px; } }
+    letter-spacing: 20px;
+    display: flex;
+    justify-content: center; } }
