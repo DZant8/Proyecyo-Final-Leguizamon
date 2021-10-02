@@ -1,0 +1,363 @@
+$pDesktop: 80 px;
+$fontFamily: 'Titillium Web';
+$fontFamily1: 'Comfortaa';
+$violeta: violet;
+$morado: purple;
+$blanco: white;
+$celeste: lightblue; 
+
+@keyframes animacionTitulo {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.3);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+.header__titulo__animacion {
+	animation-name: animacionTitulo;
+	animation-duration: 3s;
+}
+
+.header__titulo {
+	font-family: 'Titillium Web';
+	font-size: 80px;
+	color:$violeta;
+	text-align: center;
+	letter-spacing: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	font-size: 13px;
+	font-family: 'Comfortaa';
+	li {
+		a {
+			&:hover {
+				color: white;
+				padding: 4px;
+				text-decoration: none;
+			}
+		}
+	}
+}
+li {
+	display: inline-block;
+	padding: 20px;
+}
+.card {
+	box-shadow: 1px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.5s;
+	margin: 40px;
+	&:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+}
+.stickyNav {
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+}
+#barraNav {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+.menuNav {
+	font-family: 'Titillium Web';
+	li {
+		&:hover {
+			ul {
+				display: inline;
+			}
+		}
+	}
+}
+.bg-light {
+	background-color: $celeste;
+}
+.subMenu {
+	ul {
+		position: absolute;
+		display: none;
+		li {
+			display: inline;
+		}
+	}
+}
+.navbar-expand-lg {
+	background: linear-gradient(to bottom, $violeta, $celeste, $blanco);
+}
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-content: stretch;
+	margin-top: 10px;
+}
+.footer__gradiente {
+	background: linear-gradient(to bottom, $blanco, $celeste, $violeta);
+}
+.footer__nombre{
+	font-family: 'Comfortaa';
+	margin-top:25px;
+}
+.footer__logo__twitter{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.footer__logo__soundcloud{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.footer__logo__spotify{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.carouselContainer {
+	display: flex;
+	justify-content: center;
+}
+.contenido__equipo__align {
+	font-family: 'Comfortaa';
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.contenido__boton__tyc {
+	font-family: 'Comfortaa';
+}
+.contenido__boton__plataforma {
+	font-family: 'Comfortaa';
+}
+.contenido__formulario__align {
+	display: flex;
+	justify-content: center;
+}
+.inputNombre {
+	display: block;
+	width: 200px;
+	height:35px;
+	transition: all 1s;
+	&:focus {
+		width: 300px;
+		font-size: 20px;
+	}
+}
+.inputEdad {
+	display: block;
+	width: 200px;
+	height:35px;
+	transition: all 1s;
+	&:focus {
+		width: 300px;
+		font-size: 20px;
+	}
+}
+.inputEmail {
+	display: block;
+	width: 200px;
+	height:35px;
+	transition: all 1s;
+	&:focus {
+		width: 300px;
+		font-size: 20px;
+	}
+}
+.contenido__remeras__align {
+	display: flex;
+	justify-content: center;
+	padding:20px;
+	flex-wrap: wrap;
+}
+.contenido__equipo__align {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+.index__card__font{
+	font-family:'Comfortaa';
+	font-size: 18px;
+}
+:root {
+  --background: #e0e5ec;
+  --gray: #797d7f;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Comfortaa", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.player {
+  width: 500px;
+  height: 550px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+.player__controls {
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.player__btn {
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: var(--gray);
+}
+.player__btn:active {
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+    inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+.player__btn--small {
+  min-width: 50px;
+  min-height: 50px;
+}
+.player__title {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #a1a1a1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.player__album {
+  width: 150px;
+}
+.player__img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
+    -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+}
+.player__artist {
+  font-size: 1.2em;
+  font-weight: 500;
+  opacity: 0.5;
+  margin: 20px 0px 0px 0px;
+}
+.player__song {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  opacity: 0.5;
+  margin: 0;
+}
+.player__level {
+  width: 80%;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin-top: 40px;
+}
+.player__level::-webkit-slider-runnable-track {
+  background-color: #d7dbdd;
+  height: 6px;
+  border-radius: 3px;
+}
+.player__level::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 100%;
+  background-color: #5c87fe;
+  height: 18px;
+  width: 18px;
+  margin-top: -7px;
+}
+.audio-duration {
+  margin-top: -30px;
+  display: flex;
+  width: 78%;
+  font-size: 10px;
+  font-weight: 600;
+  color: #a1a1a1;
+  letter-spacing: 1px;
+}
+.start {
+  flex: 1;
+}
+.player__audio {
+  visibility: hidden;
+}
+.player__btn--medium {
+  min-height: 70px;
+  min-width: 70px;
+}
+.blue {
+  background-color: #5c87fe;
+  color: #fff;
+}
+.hide {
+  display: none;
+}
+.contenido__tracks__align {
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: wrap;
+}
+.contenido__tracksList__align{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px){
+
+	@keyframes animacionTitulo {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+.header__titulo__animacion {
+	animation-name: animacionTitulo;
+	animation-duration: 3s;
+}
+
+.header__titulo {
+	font-family: 'Titillium Web';
+	font-size: 55px;
+	color:$violeta;
+	text-align: center;
+	letter-spacing: 20px;
+}
+}
